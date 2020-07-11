@@ -1,6 +1,6 @@
 def find_item_by_name_in_collection(name, collection)
   collection.each do |item|
-    if item == name 
+    if item[name] == true
       return collection[name.index]
     else
       return nil
