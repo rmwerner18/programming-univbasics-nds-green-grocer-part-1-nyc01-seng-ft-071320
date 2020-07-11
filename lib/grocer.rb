@@ -12,7 +12,7 @@ end
 def consolidate_cart(cart)
   consolidated_cart = []
   cart.each do |item|
-    item << :count => 1
+    item[:count] = 1
   end
 binding.pry
 end
