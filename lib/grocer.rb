@@ -20,5 +20,6 @@ def consolidate_cart(cart)
     else
       consolidated_cart << item
     end
+  end
 binding.pry
 end
