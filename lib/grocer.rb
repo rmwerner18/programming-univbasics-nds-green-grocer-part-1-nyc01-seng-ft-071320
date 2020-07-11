@@ -5,6 +5,7 @@ def find_item_by_name_in_collection(name, collection)
     binding.pry
     if item.include? name
       return item
+    end
   end
   return nil
 end
