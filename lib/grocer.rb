@@ -1,7 +1,7 @@
 def find_item_by_name_in_collection(name, collection)
   collection.each do |item|
-    if item.include? name
-      return collection[name.index]
+    if collection[item.index][name] == true
+      return collection[item.index][name]
     end
   end
   return nil
