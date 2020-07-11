@@ -12,13 +12,11 @@ end
 def consolidate_cart(cart)
   consolidated_cart = []
   cart.each do |item|
-    item[:count] = 1
-  end
-  cart.each do |item|
     if consolidated_cart.include? item
       item[:count] += 1
     else
       consolidated_cart << item
+      item[:count] = 1
     end
   end
 end
